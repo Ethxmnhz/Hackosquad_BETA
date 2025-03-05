@@ -53,13 +53,11 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-lg border border-primary/10 bg-card/30 backdrop-blur-sm">
+            <div className="relative overflow-hidden rounded-lg border border-primary/10 bg-card/30 backdrop-blur-sm min-h-[300px]">
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-background/20 pointer-events-none" />
-              <img 
-                src="/attached_assets/Screenshot 2025-03-03 222919.png"
-                alt="HackoSquad Dashboard"
-                className="w-full h-auto"
-              />
+              <div className="p-8 text-center text-muted-foreground">
+                Platform Screenshot Preview
+              </div>
             </div>
 
             <motion.div
@@ -68,13 +66,11 @@ export function Hero() {
               transition={{ delay: 0.6 }}
               className="absolute -bottom-6 -right-6 w-2/3"
             >
-              <div className="relative overflow-hidden rounded-lg border border-primary/10 bg-card/30 backdrop-blur-sm">
+              <div className="relative overflow-hidden rounded-lg border border-primary/10 bg-card/30 backdrop-blur-sm min-h-[200px]">
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-background/20 pointer-events-none" />
-                <img 
-                  src="/attached_assets/Screenshot 2025-03-03 222933.png"
-                  alt="HackoSquad Creator Zone"
-                  className="w-full h-auto"
-                />
+                <div className="p-8 text-center text-muted-foreground">
+                  Creator Zone Preview
+                </div>
               </div>
             </motion.div>
           </motion.div>
