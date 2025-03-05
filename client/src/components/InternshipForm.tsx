@@ -30,15 +30,15 @@ export function InternshipForm() {
       });
 
       toast({
-        title: "Success!",
-        description: "Your application has been submitted. We'll review it and get back to you.",
+        title: "Thanks for sharing!",
+        description: "We'll review your thoughts and get back to you if we think there's a good fit.",
       });
       setOpen(false);
       setFeedback("");
     } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to submit your application. Please try again.",
+        description: "Failed to submit your feedback. Please try again.",
         variant: "destructive",
       });
     } finally {
@@ -49,31 +49,28 @@ export function InternshipForm() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button size="lg" className="gap-2">
-          Join Our Mission
+        <Button size="lg" className="gap-2 mt-6">
+          Share Your Ideas
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px]">
         <DialogHeader>
-          <DialogTitle>Join HackoSquad Development</DialogTitle>
+          <DialogTitle>Tell Us Your Experience</DialogTitle>
           <DialogDescription className="text-base space-y-4">
             <p>
-              We're not a company - we're a community of cybersecurity enthusiasts building the future of security education.
-              We don't offer certifications or traditional internship letters.
+              Instead of a resume, we want to hear about your experiences and ideas. Tell us about:
             </p>
-            <p>
-              What we offer is real experience: Your ideas will shape our platform, your decisions will matter,
-              and you'll be part of building something that helps others learn cybersecurity effectively.
-            </p>
-            <p className="font-semibold">
-              Share with us:
-            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>What frustrates you about current cybersecurity learning platforms?</li>
+              <li>What's missing from the existing learning resources?</li>
+              <li>How would you make learning cybersecurity more effective?</li>
+            </ul>
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-6 mt-4">
           <div className="space-y-2">
             <Textarea
-              placeholder="What challenges have you faced while learning cybersecurity? How do existing platforms fall short? What would you change to make learning more effective?"
+              placeholder="Share your thoughts and ideas here... What would make learning cybersecurity better?"
               value={feedback}
               onChange={(e) => setFeedback(e.target.value)}
               className="min-h-[200px]"
@@ -81,7 +78,7 @@ export function InternshipForm() {
             />
           </div>
           <Button type="submit" className="w-full" disabled={isLoading}>
-            {isLoading ? "Submitting..." : "Submit Application"}
+            {isLoading ? "Submitting..." : "Share Your Ideas"}
           </Button>
         </form>
       </DialogContent>

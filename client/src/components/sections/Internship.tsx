@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { InternshipForm } from "@/components/InternshipForm";
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Rocket, Award } from "lucide-react";
+import { Star, Rocket, Award, Lightbulb } from "lucide-react";
 
 export function Internship() {
   return (
@@ -15,9 +15,9 @@ export function Internship() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Join Our Mission</h2>
+          <h2 className="text-4xl font-bold mb-4">Help Build The Future of Cybersecurity Learning</h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            Looking for passionate individuals who want to shape the future of cybersecurity education
+            We're looking for passionate individuals who want to make cybersecurity education better for everyone
           </p>
         </motion.div>
 
@@ -29,19 +29,24 @@ export function Internship() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-2xl font-bold mb-4">Important Note</h3>
+                <h3 className="text-2xl font-bold mb-4">Something Different</h3>
                 <div className="prose prose-invert max-w-none">
                   <p className="text-muted-foreground mb-4">
-                    We're not a company - we're a community of cybersecurity enthusiasts building the future of security education.
-                    We don't offer certifications or traditional internship letters.
+                    Forget about polishing your resume or updating your LinkedIn - we're not that kind of place. 
+                    We're a community of cybersecurity enthusiasts building something meaningful together.
                   </p>
                   <p className="text-muted-foreground mb-4">
-                    What we offer is real experience: Your ideas will shape our platform, your decisions will matter,
-                    and you'll be part of building something that helps others learn cybersecurity effectively.
+                    We don't care about your certifications or fancy titles. What we want are your ideas, 
+                    your experiences, and your understanding of what's wrong with current cybersecurity learning platforms.
+                  </p>
+                  <p className="text-muted-foreground mb-4">
+                    You won't get a certificate or an offer letter from us. Instead, you'll get something 
+                    more valuable: the chance to directly shape a platform that helps others learn cybersecurity effectively.
                   </p>
                   <p className="text-muted-foreground">
-                    If you're looking for a certificate to add to your LinkedIn profile, this isn't for you.
-                    But if you want to make a real impact in cybersecurity education, let's talk.
+                    If you're looking for just another internship to add to your resume, this isn't for you. 
+                    But if you're passionate about making cybersecurity education better and want to be part 
+                    of something meaningful, we'd love to hear your thoughts.
                   </p>
                 </div>
 
@@ -54,20 +59,24 @@ export function Internship() {
                 viewport={{ once: true }}
                 className="bg-primary/5 rounded-lg p-6"
               >
-                <h4 className="text-xl font-semibold mb-4">What You'll Get</h4>
+                <h4 className="text-xl font-semibold mb-4">What Makes This Different?</h4>
                 <ul className="space-y-4">
                   {[
                     {
+                      icon: Lightbulb,
+                      text: "Your ideas will directly shape the platform's future"
+                    },
+                    {
                       icon: Star,
-                      text: "Direct involvement in platform decisions"
+                      text: "Be part of key decisions and platform direction"
                     },
                     {
                       icon: Rocket,
-                      text: "Real impact on cybersecurity education"
+                      text: "Build something that actually helps people learn"
                     },
                     {
                       icon: Award,
-                      text: "Experience building a real-world platform"
+                      text: "Real work experience, not just another certificate"
                     }
                   ].map((item, i) => (
                     <motion.li
