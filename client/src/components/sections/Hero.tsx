@@ -56,7 +56,7 @@ export function Hero() {
             <div className="relative overflow-hidden rounded-lg border border-primary/10 bg-card/30 backdrop-blur-sm">
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-background/20 pointer-events-none" />
               <img 
-                src="attached_assets/Screenshot 2025-03-03 222919.png"
+                src="/attached_assets/Screenshot 2025-03-03 222919.png"
                 alt="HackoSquad Dashboard"
                 className="w-full h-auto"
               />
@@ -71,7 +71,7 @@ export function Hero() {
               <div className="relative overflow-hidden rounded-lg border border-primary/10 bg-card/30 backdrop-blur-sm">
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-background/20 pointer-events-none" />
                 <img 
-                  src="attached_assets/Screenshot 2025-03-03 222933.png"
+                  src="/attached_assets/Screenshot 2025-03-03 222933.png"
                   alt="HackoSquad Creator Zone"
                   className="w-full h-auto"
                 />
