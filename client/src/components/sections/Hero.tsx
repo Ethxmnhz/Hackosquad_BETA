@@ -51,7 +51,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="relative lg:scale-110 lg:translate-x-10"
+            className="relative xl:scale-125 xl:translate-x-20 lg:scale-110 lg:translate-x-10"
           >
             <div className="relative overflow-hidden rounded-lg border border-primary/10 bg-card/30 backdrop-blur-sm shadow-xl">
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-background/20 pointer-events-none z-10" />
