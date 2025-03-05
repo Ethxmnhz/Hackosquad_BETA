@@ -5,33 +5,33 @@ import { Shield, Target, Trophy, Brain, Lock, LineChart } from "lucide-react";
 const features = [
   {
     icon: Shield,
-    title: "CTF Challenges",
-    description: "Test your skills with capture the flag challenges"
+    title: "Practical Learning",
+    description: "Learn cybersecurity through hands-on experience with real-world scenarios and daily updated labs"
   },
   {
     icon: Target,
-    title: "Learning Paths",
-    description: "Structured paths for beginners to experts"
+    title: "Customized Paths",
+    description: "Follow personalized learning paths tailored to your specific needs and goals"
   },
   {
     icon: Trophy,
-    title: "Achievements",
-    description: "Earn badges and climb the leaderboard"
+    title: "Weekly CTF Events",
+    description: "Participate in regular CTF challenges and compete with the community"
   },
   {
     icon: Brain,
-    title: "Skill Building",
-    description: "Practice with real-world scenarios"
+    title: "Project Development",
+    description: "Work on real security projects with potential monetary rewards"
   },
   {
     icon: Lock,
-    title: "Security Labs",
-    description: "Hands-on experience in secure environments"
+    title: "Free Access",
+    description: "Access all features and resources completely free of charge"
   },
   {
     icon: LineChart,
-    title: "Progress Tracking",
-    description: "Monitor your learning journey"
+    title: "Community Growth",
+    description: "Learn from worldwide experts and contribute to the community"
   }
 ];
 
@@ -66,10 +66,12 @@ export function Features() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Platform Features
+            What is HackoSquad?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to master cybersecurity skills in one place
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            HackoSquad is more than just a platform - it's a community-driven cybersecurity learning ecosystem. 
+            We provide practical, hands-on experience through customized learning paths, daily updated labs, 
+            weekly CTF events, and real project development opportunities - all completely free.
           </p>
         </motion.div>
 

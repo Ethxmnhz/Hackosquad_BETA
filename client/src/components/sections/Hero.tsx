@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { BetaAccessForm } from "@/components/BetaAccessForm";
 
 export function Hero() {
   return (
@@ -36,11 +36,11 @@ export function Hero() {
                 security in our community-driven platform.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="gap-2">
-                  Get Started <ArrowRight className="w-4 h-4" />
-                </Button>
-                <Button size="lg" variant="outline">
-                  Learn More
+                <BetaAccessForm />
+                <Button size="lg" variant="outline" asChild>
+                  <a href="https://discord.gg/rJexj8W7yd" target="_blank" rel="noopener noreferrer">
+                    Join Discord
+                  </a>
                 </Button>
               </div>
             </motion.div>
@@ -51,7 +51,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="relative"
+            className="relative lg:scale-110 lg:translate-x-10"
           >
             <div className="relative overflow-hidden rounded-lg border border-primary/10 bg-card/30 backdrop-blur-sm shadow-xl">
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-background/20 pointer-events-none z-10" />
