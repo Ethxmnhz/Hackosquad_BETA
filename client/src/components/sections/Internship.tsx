@@ -15,9 +15,9 @@ export function Internship() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Help Build The Future of Cybersecurity Learning</h2>
+          <h2 className="text-4xl font-bold mb-4">Join as Intern in HackoSquad</h2>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            We're looking for passionate individuals who want to make cybersecurity education better for everyone
+            We're looking for passionate individuals who want to make cybersecurity better for everyone
           </p>
         </motion.div>
 
@@ -37,7 +37,7 @@ export function Internship() {
                   </p>
                   <p className="text-muted-foreground mb-4">
                     We don't care about your certifications or fancy titles. What we want are your ideas, 
-                    your experiences, and your understanding of what's wrong with current cybersecurity learning platforms.
+                    your experiences, and your understanding of what's wrong with current cybersecurity platforms.
                   </p>
                   <p className="text-muted-foreground mb-4">
                     You won't get a certificate or an offer letter from us. Instead, you'll get something 
@@ -45,7 +45,7 @@ export function Internship() {
                   </p>
                   <p className="text-muted-foreground">
                     If you're looking for just another internship to add to your resume, this isn't for you. 
-                    But if you're passionate about making cybersecurity education better and want to be part 
+                    But if you're passionate about making cybersecurity better and want to be part 
                     of something meaningful, we'd love to hear your thoughts.
                   </p>
                 </div>
